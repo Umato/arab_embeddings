@@ -1,10 +1,14 @@
 [project]
-name = "token_distillation_repo"
-version = "1.0.0"
-description = "Repository workspace for Token Distillation, including the reusable package and paper reproduction code."
+name = "arab-embeddings"
+version = "0.1.0"
+description = "Experiments on Arabic vocabulary expansion and embedding initialization for Qwen3."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = ["token_distillation"]
+dependencies = [
+    "token_distillation",
+    "openai>=1.0.0",
+    "pydantic>=2.0",
+]
 
 [tool.uv.sources]
 token_distillation = [{ path = "token_distillation/", editable = true }]

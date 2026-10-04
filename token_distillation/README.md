@@ -1,10 +1,14 @@
 # Token Distillation: Attention-aware Input Embeddings for New Tokens
 
-Token Distillation quickly learns input embeddings for newly added tokens by distilling hidden states from the original tokenization into a single embedding.
+> **Upstream attribution.** This directory is derived from the official
+> [Token Distillation implementation](https://github.com/konstantinjdobler/token-distillation)
+> by Konstantin Dobler, Desmond Elliott, and Gerard de Melo, accompanying their
+> [ICLR 2026 paper](https://arxiv.org/abs/2505.20133). The upstream code is MIT-licensed;
+> the original copyright and license notice are preserved in [LICENSE](./LICENSE).
+> This copy contains project-specific modifications for Arabic vocabulary expansion,
+> including staged training and multi-layer distillation experiments.
 
-This package provides the reusable Python implementation from our ICLR 2026 paper
-"Token Distillation: Attention-aware Input Embeddings for New Tokens"
-([arXiv:2505.20133](https://arxiv.org/abs/2505.20133)).
+Token Distillation learns input embeddings for newly added tokens by distilling hidden states from the original tokenization into a single embedding.
 
 ## Quickstart
 
